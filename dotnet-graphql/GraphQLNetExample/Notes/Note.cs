@@ -1,8 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace GraphQLNetExample.Notes
 {
     public class Note
     {
         public Guid Id {get;set;}
-        public string? Message {get;set;}
+        [Required]
+        public string Message {get;set;}
     }
 }
